@@ -18,7 +18,7 @@ export const ProductCard = (props) => {
                 <Card.Body className=' bg-light text-success'>
                     <div className="d-flex justify-content-between">
                         <Card.Title className='text-start '>{title}  </Card.Title>
-                        <Card.Title className='text-end   '>{price} </Card.Title>
+                        <Card.Title className='text-end   '>${price}.00 </Card.Title>
                     </div>
                     <div className="d-flex justify-content-between mt-4 align-items-center">
                         <Card.Subtitle className="  text-start">{description}</Card.Subtitle>
