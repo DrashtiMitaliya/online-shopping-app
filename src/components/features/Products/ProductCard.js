@@ -1,19 +1,16 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { useSelector, useDispatch } from 'react-redux';
-import SAMPLE_PRDDUCTS from '../../../constant/productData';
+import {  useDispatch } from 'react-redux';
 import { addCartItem } from './productSlice';
 
-
-
-
 export const ProductCard = (props) => {
-    const nuOfProducts = useSelector((state) => state.products.nuOfProducts)
     const dispatch = useDispatch()
     const {id, title, price, description } = props.item
     return (
         <div>
+            
+            {/* A card that is being displayed on the page. */}
             <Card className='m-auto  mt-3' >
                 <Card.Body className=' bg-light text-success'>
                     <div className="d-flex justify-content-between">

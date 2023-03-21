@@ -1,3 +1,4 @@
+/*API data  called SAMPLE_PRDDUCTS  */
 const SAMPLE_PRDDUCTS = [
     {
         id: 'p1',

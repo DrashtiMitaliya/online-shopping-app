@@ -8,9 +8,12 @@ const HeroCard = (props) => {
         title,
         price,
         itemQuantity} = props.item
-        const dispatch = useDispatch()
+
+    const dispatch = useDispatch()
     return (
         <>
+           { /* This is the card that is being rendered in the cart. */}
+           
             <Card className='m-auto mt-3' >
                 <Card.Body className=' bg-light text-success'>
                     <div className="d-flex justify-content-between">

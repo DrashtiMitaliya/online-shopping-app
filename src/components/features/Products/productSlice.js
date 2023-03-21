@@ -8,11 +8,15 @@ const productSlice = createSlice({
     name: 'products',
     initialState,
     reducers: {
+        /* A reducer function that defines action. */
         decrement: (state = initialState,action) => {
             state.noOfProducts--
             let index = state.data.findIndex(item => item.id === action.payload.id)
             state.data[index].itemQuantity--
             state.data[index].price-=state.data[index].basePrice
+            if(state.data[index].itemQuantity===0){
+                state.data.splice(index,1)
+            }
           
         },
         increment: (state = initialState, action) => {
